@@ -1,0 +1,41 @@
+[
+  {
+    "operation": "dispatch",
+    "request": {
+      "channel": "speaker-1",
+      "action": "start",
+      "alert": "flood-7"
+    },
+    "reply": {
+      "remote_id": "speaker-job-27",
+      "result": "accepted"
+    },
+    "outcome": "commit_disconnect"
+  },
+  {
+    "operation": "dispatch",
+    "request": {
+      "channel": "backup-sms",
+      "action": "start",
+      "alert": "slide-4"
+    },
+    "reply": {
+      "remote_id": "backup-job-6",
+      "result": "rejected",
+      "reason": "temporarily_unavailable"
+    },
+    "outcome": "success"
+  },
+  {
+    "operation": "device-observation",
+    "request": {
+      "remote_id": "speaker-job-27",
+      "kind": "audible"
+    },
+    "reply": {
+      "observed_at": "2028-07-03T13:08:00+08:00",
+      "heard": true
+    },
+    "outcome": "success"
+  }
+]

@@ -1,0 +1,77 @@
+{
+  "towns": [
+    "north",
+    "west"
+  ],
+  "delegation": {
+    "id": "del-5",
+    "owner": "north",
+    "delegate": "west",
+    "villages": [
+      "ridge",
+      "ford"
+    ],
+    "until": "2028-07-03T14:00:00+08:00",
+    "returned": [
+      "ford"
+    ]
+  },
+  "channels": {
+    "speaker-1": {
+      "scope": [
+        "ridge",
+        "ford"
+      ],
+      "mode": "whole_group"
+    },
+    "backup-sms": {
+      "scope": [
+        "ridge",
+        "ford"
+      ],
+      "mode": "per_alert"
+    }
+  },
+  "warnings": [
+    {
+      "id": "flood-7",
+      "villages": [
+        "ridge",
+        "ford"
+      ]
+    },
+    {
+      "id": "slide-4",
+      "villages": [
+        "ridge"
+      ]
+    }
+  ],
+  "withdrawal": {
+    "warning": "flood-7",
+    "villages": [
+      "ford"
+    ]
+  },
+  "observed_at": {
+    "initial_outage": "2028-07-03T12:30:00+08:00",
+    "authorization": "2028-07-03T12:45:00+08:00",
+    "returned": "2028-07-03T13:01:00+08:00",
+    "withdrawal": "2028-07-03T13:05:00+08:00"
+  },
+  "village_owners": {
+    "ridge": "north",
+    "ford": "north",
+    "bank": "west"
+  },
+  "alternate_routes": [
+    {
+      "channel": "speaker-3",
+      "villages": [
+        "ridge"
+      ],
+      "mode": "per_alert",
+      "available_from": "2028-07-03T13:20:00+08:00"
+    }
+  ]
+}
