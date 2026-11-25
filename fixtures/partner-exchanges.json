@@ -37,5 +37,54 @@
       "heard": true
     },
     "outcome": "success"
+  },
+  {
+    "operation": "dispatch",
+    "request": {
+      "channel": "speaker-3",
+      "action": "start",
+      "alert": "slide-4"
+    },
+    "reply": {
+      "remote_id": "speaker-alt-8",
+      "result": "accepted"
+    },
+    "outcome": "success"
+  },
+  {
+    "operation": "device-observation",
+    "request": {
+      "remote_id": "speaker-alt-8",
+      "kind": "audible"
+    },
+    "reply": {
+      "observed_at": "2028-07-03T13:22:00+08:00",
+      "heard": true
+    },
+    "outcome": "success"
+  },
+  {
+    "operation": "dispatch",
+    "request": {
+      "channel": "speaker-1",
+      "action": "stop-group"
+    },
+    "reply": {
+      "remote_id": "speaker-job-28",
+      "result": "accepted"
+    },
+    "outcome": "success"
+  },
+  {
+    "operation": "device-observation",
+    "request": {
+      "remote_id": "speaker-job-28",
+      "kind": "silent"
+    },
+    "reply": {
+      "observed_at": "2028-07-03T13:25:00+08:00",
+      "heard": false
+    },
+    "outcome": "success"
   }
 ]
