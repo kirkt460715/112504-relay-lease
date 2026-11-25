@@ -43,6 +43,34 @@
     "request": {
       "channel": "speaker-3",
       "action": "start",
+      "alert": "flood-7",
+      "villages": [
+        "ridge"
+      ]
+    },
+    "reply": {
+      "remote_id": "speaker-alt-7",
+      "result": "accepted"
+    },
+    "outcome": "success"
+  },
+  {
+    "operation": "device-observation",
+    "request": {
+      "remote_id": "speaker-alt-7",
+      "kind": "audible"
+    },
+    "reply": {
+      "observed_at": "2028-07-03T13:21:00+08:00",
+      "heard": true
+    },
+    "outcome": "success"
+  },
+  {
+    "operation": "dispatch",
+    "request": {
+      "channel": "speaker-3",
+      "action": "start",
       "alert": "slide-4"
     },
     "reply": {
